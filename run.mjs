@@ -1,6 +1,6 @@
 import { join } from 'node:path';
-import { list, repeat, reportsIn, selectors, value, writeRunnerFile } from '@cairul/plugin-kit/runner';
-import { junit } from '@cairul/plugin-kit/reports';
+import { list, repeat, reportsIn, selectors, value, writeRunnerFile } from '@cairul/pdk/runner';
+import { junit } from '@cairul/pdk/reports';
 
 const init = `allprojects {
   tasks.withType(org.gradle.api.tasks.testing.Test).configureEach {
